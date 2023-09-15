@@ -193,236 +193,236 @@ func main() {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "особо пока ничего нового")
 				bot.Send(msg)
 			} else if text == "👔рубашки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("1.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/1.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские рубашки по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👕футболки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("2.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/2.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские футболки по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard12
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🦺майки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("9.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/9.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские майки по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard13
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🩳шорты🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("10.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/10.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские шорты по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard14
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👖джинсы🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("11.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/11.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские джинсы по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard15
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👖штаны🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("12.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/12.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские штаны по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard16
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👘платья🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("13.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/13.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские платья по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard17
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👗юбки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("14.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/14.jpg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские юбки по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard18
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🥼блузки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("15.jpeg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/15.jpeg"))
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские блузки по выгодным ценам...")
 				msg.ReplyMarkup = numericKeyboard18
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "детская одежда" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "когда нибудь, но не сегодня)")
-				photo := tgbotapi.NewPhoto(update.Message.From.ID, tgbotapi.FilePath("3.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.From.ID, tgbotapi.FilePath("./photo/3.jpg"))
 				msg.ReplyMarkup = numericKeyboard1
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "мужская одежда" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Бывало и по лучше!")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("4.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/4.jpg"))
 				msg.ReplyMarkup = numericKeyboard2
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "женская одежда" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Ну пока учусь")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("5.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/5.jpg"))
 				msg.ReplyMarkup = numericKeyboard3
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "обувь" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Ну с кем не бывает")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("6.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/6.jpg"))
 				msg.ReplyMarkup = numericKeyboard4
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "головные уборы" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "зато сам, ну почти XD")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("7.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/7.jpg"))
 				msg.ReplyMarkup = numericKeyboard5
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "аксесуары" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "по факту, я устал")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("8.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/8.jpg"))
 				msg.ReplyMarkup = numericKeyboard6
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👔рубашки🚹" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Мужские рубашки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("16.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/16.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👕футболки🚹" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Футболки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("17.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/17.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🦺майки🚹" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Майки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("18.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/18.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🩳шорты🚹" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Шорты по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("19.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/19.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👖джинсы🚹" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Джинсы по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("20.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/20.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👖штаны🚹" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Штаны по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("21.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/21.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👘платья🚺" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Платья по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("22.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/22.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👗юбки🚺" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Юбки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("23.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/23.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🥼блузки🚺" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Блузки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("24.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/24.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🩳шорты🚺" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Женские шорты по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("25.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/25.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👖джинсы🚺" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Женские джинсы по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("26.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/26.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👖штаны🚺" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Женские штаны по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("27.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/27.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👟кросовки👟" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Кросовки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("28.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/28.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👞туфли👞" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Туфли по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("29.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/29.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🥾ботинки🥾" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Ботинки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("30.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/30.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🩴тапочки🩴" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Тапочки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("31.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/31.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👢зимняя👢" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Зимняя обувь по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("32.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/32.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👟всесезоняя👠" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Всесезоняя обувь по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("33.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/33.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🧢кепки🧢" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Кепки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("34.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/34.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👒панамы👒" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Панамы по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("35.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/35.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "👑шапки👑" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Шапки по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("36.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/36.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "✨колье✨" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Женские украшения по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("37.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/37.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "💍кольца💍" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Женские украшения по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("38.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/38.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "✨серьги✨" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Женские украшения по выгодным ценам...")
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("39.jpg"))
+				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/39.jpg"))
 				msg.ReplyMarkup = numericKeyboard11
 				bot.Send(photo)
 				bot.Send(msg)
