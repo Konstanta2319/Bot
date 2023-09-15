@@ -161,14 +161,20 @@ var numericKeyboard = tgbotapi.NewReplyKeyboard(
 	),
 )
 
+type Bot struct {
+	*tgbotapi.BotAPI
+}
+
 func main() {
-	bot, err := tgbotapi.NewBotAPI("5570771711:AAHhr-jw60pmQUXeWaScTtqKe8XTG8JL3_Q")
+	tgbot, err := tgbotapi.NewBotAPI("5570771711:AAHhr-jw60pmQUXeWaScTtqKe8XTG8JL3_Q")
 	if err != nil {
 		log.Panic(err)
 	}
 
-	bot.Debug = true
-
+	tgbot.Debug = true
+	bot := &Bot{
+		BotAPI: tgbot,
+	}
 	log.Printf("Authorized on account %s", bot.Self.UserName)
 
 	u := tgbotapi.NewUpdate(0)
@@ -178,11 +184,15 @@ func main() {
 
 	for update := range updates {
 		if update.Message != nil { // If we got a message
+			chatId := update.Message.Chat.ID
 
 			log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
 
 			text := strings.ToLower(update.Message.Text)
-			if text == "привет" {
+			photo, ok := Photos[text]
+			if ok {
+				bot.sendPhoto(chatId, photo)
+			} else if text == "привет" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Ну привет! 😀")
 				msg.ReplyMarkup = numericKeyboard
 				bot.Send(msg)
@@ -191,18 +201,6 @@ func main() {
 				bot.Send(msg)
 			} else if text == "что ты можешь?" {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "особо пока ничего нового")
-				bot.Send(msg)
-			} else if text == "👔рубашки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/1.jpg"))
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские рубашки по выгодным ценам...")
-				msg.ReplyMarkup = numericKeyboard11
-				bot.Send(photo)
-				bot.Send(msg)
-			} else if text == "👕футболки🚼" {
-				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/2.jpg"))
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Детские футболки по выгодным ценам...")
-				msg.ReplyMarkup = numericKeyboard12
-				bot.Send(photo)
 				bot.Send(msg)
 			} else if text == "🦺майки🚼" {
 				photo := tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath("./photo/9.jpg"))
