@@ -9,7 +9,7 @@ type Photo struct {
 }
 
 var Photos = map[string]Photo{
-	"👔Рубашки🚼":    {"1.jpg", "Детские рубашки по выгодным ценам...", "https://www.wildberries.ru/catalog/detyam/odezhda/dlya-malchikov/rubashki"},
+	"👔рубашки🚼":    {"1.jpg", "Детские рубашки по выгодным ценам...", "https://www.wildberries.ru/catalog/detyam/odezhda/dlya-malchikov/rubashki"},
 	"👕футболки🚼":   {"2.jpg", "Детские футболки по выгодным ценам...", "https://www.ozon.ru/category/futbolki-i-polo-dlya-malchikov/"},
 	"🦺майки🚼":      {"9.jpg", "Детские майки по выгодным ценам...", "https://www.ozon.ru/category/detskie-mayki/"},
 	"🩳шорты🚼":      {"10.jpg", "Детские шорты по выгодным ценам...", "https://www.ozon.ru/category/shorty-dlya-malchikov/"},
